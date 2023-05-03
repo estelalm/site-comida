@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+/*/ -------------------- /*/
+
+body{
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 7vh;
+    width: 90%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.322)),
+    url('./img/background.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1.3vw;
+    align-items: center;
+}
+.logo-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:5vw;
+    width:5vw;
+    border: solid white 2px;
+    border-radius: 40px;
+}
+.logo-img{
+    width:4vw;
+}
+.logo-text{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 1.7vw;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-left: 20vw;
+    margin-right: 10vw;
+}
+.menu-link{
+    color: #CFB590;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    font-size: 1.5vw;
+}
+
+.compra{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+.carrinho{
+    height: 3.5vw;
+}
+.valor{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 2.3vw;
+    height:2.3vw;
+    background-color: #cfb590ee;
+    color: black;
+    font-size: 1.2vw;
+    border-radius: 30px;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    right: 1vw;
+    bottom: 2vh;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+}
+
+.text{
+    font-family: 'Merriweather', serif;
+}
+.title{
+    color:#CFB590;
+    letter-spacing: 2px;
+    font-size: 3vw;
+}
+.subtitle{
+    color: white;
+    margin-top: 10px;
+    font-size: 1.5vw;
+}
+
+.button{
+    font-size: 1.3vw;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    gap: 2vw;
+    margin-top: 10vh;
+}
+.order{
+    background-color: #CFB590;
+    color: black;
+    border: solid  #CFB590 2px;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 40px;
+    text-align: center;
+}
+.reserve{
+    border: solid white 2px;
+    color: white;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 40px;
+    text-align: center;
+}
+
+
+
+footer{
+    width: 100%;
+    margin-top: 4vw;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.social-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFB590;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 4vw;
+}
+.socials img{
+    position: relative;
+    top: 2px;
+    height: 2vw;
+    width: 2vw;
+}
+
+/*/ -------------------- /*/
+
+.menu-link:hover{
+    color: blanchedalmond;
+    transition: 0.5s;
+}
+.compra:hover > p{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.button a:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.order:hover{
+    border: solid  white 2px;
+}
+
+.reserve:hover{
+    border: solid  #CFB590 2px;
+}
+
+.socials a:hover{
+    transform: scale(1.1);
+}
