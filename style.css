@@ -39,6 +39,10 @@ header{
     width: 100%;
 }
 
+.menu-drop-container{
+    display: none;
+}
+
 .logo-container{
     display: flex;
     flex-direction: row;
@@ -76,6 +80,10 @@ header{
     margin-right: 1.5vw;
     font-size: 1.5vw;
 }
+.menu-title{
+    display: none;
+    color: white;
+}
 
 .compra{
     display: flex;
@@ -94,7 +102,7 @@ header{
     background-color: #cfb590ee;
     color: black;
     font-size: 1.2vw;
-    border-radius: 30px;
+    border-radius: 3vw;
     font-family: 'Merriweather', serif;
     position: relative;
     right: 1vw;
@@ -116,12 +124,12 @@ main{
 }
 .title{
     color:#CFB590;
-    letter-spacing: 2px;
+    letter-spacing: 0.15vw;
     font-size: 3vw;
 }
 .subtitle{
     color: white;
-    margin-top: 10px;
+    margin-top: 1.2vh;
     font-size: 1.5vw;
 }
 
@@ -135,22 +143,22 @@ main{
 .order{
     background-color: #CFB590;
     color: black;
-    border: solid  #CFB590 2px;
+    border: solid  #CFB590 0.2vw;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    border-radius: 40px;
+    border-radius: 4vw;
     text-align: center;
 }
 .reserve{
-    border: solid white 2px;
+    border: solid white 0.2vw;
     color: white;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    border-radius: 40px;
+    border-radius: 4vw;
     text-align: center;
 }
 
@@ -176,7 +184,7 @@ footer{
 }
 .socials img{
     position: relative;
-    top: 2px;
+    top: 0.5vh;
     height: 2vw;
     width: 2vw;
 }
@@ -186,6 +194,7 @@ footer{
 .menu-link:hover{
     color: blanchedalmond;
     transition: 0.5s;
+    cursor: pointer;
 }
 .compra:hover > p{
     transition: 0.3s;
@@ -195,9 +204,10 @@ footer{
 .button a:hover{
     transform: scale(1.05);
     transition: 0.3s;
+    cursor: pointer;
 }
 .order:hover{
-    border: solid  white 2px;
+    border: solid  white 0.2vw;
 }
 
 .reserve:hover{
@@ -205,5 +215,404 @@ footer{
 }
 
 .socials a:hover{
+    cursor: pointer;
     transform: scale(1.1);
 }
+
+
+/* --------------------- */
+/* responsivo, ipad mini */
+/* --------------------- */
+
+@media (max-width: 768px) {
+
+    body{
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:black;
+        background-image: url('./img/nobackground-01.jpeg');
+        background-size: 230vw;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    header{
+        display: grid;
+        margin-top: 3vh;
+        width: 100%;
+    }
+    
+    .logo-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        align-items: center;
+    }
+    .logo-circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:15vw;
+        width:15vw;
+        border: solid white 0.5vw;
+        border-radius: 10vw;
+    }
+    .logo-img{
+        width:12vw;
+    }
+    .logo-text{
+        font-family: 'Merriweather', serif;
+        color: white;
+        font-size: 4vw;
+    }
+    
+    .menu{
+        position: absolute;
+        top: 15vh;
+        right: -3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vw;
+    }
+    .menu-link{
+        color: #CFB590;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 2vw;
+        font-size: 4.5vw;
+    }
+    
+    .compra{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        margin-left: 75vw;
+    }
+    .carrinho{
+        height: 10vw;
+    }
+    .valor{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 6vw;
+        height: 6vw;
+        background-color: #cfb590ee;
+        color: black;
+        font-size: 3vw;
+        border-radius: 10vw;
+        font-family: 'Merriweather', serif;
+        position: relative;
+        right: 2vw;
+        bottom: 3vh;
+    }
+    
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    
+    .text{
+        font-family: 'Merriweather', serif;
+    }
+    .title{
+        color:#CFB590;
+        letter-spacing: 0.15vw;
+        font-size: 7.89vw;
+        font-weight: lighter;
+        margin-top: 10vh;
+    }
+    .subtitle{
+        color: white;
+        margin-top: 1.2vh;
+        font-size: 5vw;
+    }
+
+    .button{
+        font-size: 4.5vw;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        margin-top: 13vh;
+    }
+    .order{
+        background-color: #CFB590;
+        color: black;
+        border: solid  #CFB590 0.5vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        border-radius: 10vw;
+        text-align: center;
+    }
+    .reserve{
+        border: solid white 0.5vw;
+        color: white;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        border-radius: 10vw;
+        text-align: center;
+    }
+
+
+    footer{
+        width: 100%;
+        margin-top: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+    .social-circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #CFB590;
+        height: 8vw;
+        width: 8vw;
+        border-radius: 8vw;
+    }
+    .socials img{
+        position: relative;
+        top: 0.2vh;
+        height: 5.5vw;
+        width: 5.5vw;
+    }
+
+    
+}
+
+
+/* --------------------- */
+/* responsivo, iphone SE */
+/* --------------------- */
+
+@media (max-width: 380px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3vh;
+        width: 100%;
+    }
+    
+
+    .logo-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        align-items: center;
+        margin-left: 16vw;
+    }
+    .logo-circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:15vw;
+        width:15vw;
+        border: solid white 0.5vw;
+        border-radius: 10vw;
+    }
+    .logo-img{
+        width:12vw;
+    }
+    .logo-text{
+        font-family: 'Merriweather', serif;
+        color: white;
+        font-size: 4vw;
+    }
+    .menu-drop-container{
+        display: flex; 
+        flex-direction: column;
+    }
+    .menu-drop{
+        height: 10vw;
+    }
+    .menud{
+        display: none;
+        position: absolute;
+        top: 10vh;
+        left: -15vw;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10vw;
+        background-color: rgba(0, 0, 0, 0.822);
+        border: solid #CFB590 0.5vw ;
+        padding: 2vw;
+        height: 70vh;
+        width: 60vw;
+        gap: 4vh;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-title{
+        display: block;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 6vw;
+        margin: 2vw;
+    }
+    .menu-link{
+        color: #CFB590;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 2vw;
+        font-size: 7vw;
+    }
+    .line{
+        background-color: white;
+        height: 0.2vh;
+        width: 85%;
+    }
+    
+    .compra{
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    .carrinho{
+        height: 10vw;
+    }
+    .valor{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 6vw;
+        height: 6vw;
+        background-color: #cfb590ee;
+        color: black;
+        font-size: 3vw;
+        border-radius: 10vw;
+        font-family: 'Merriweather', serif;
+        position: relative;
+        right: 2vw;
+        bottom: 3vh;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    
+    .text{
+        font-family: 'Merriweather', serif;
+    }
+    .title{
+        color:#CFB590;
+        letter-spacing: 0.15vw;
+        font-size: 7.89vw;
+        font-weight: lighter;
+        margin-top: 8vh;
+        text-align: center;
+    }
+    .subtitle{
+        color: white;
+        margin-top: 1.2vh;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .button{
+        font-size: 6vw;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        margin-top: 5vh;
+    }
+    .order{
+        background-color: #CFB590;
+        color: black;
+        border: solid  #CFB590 0.5vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        border-radius: 10vw;
+        text-align: center;
+    }
+    .reserve{
+        border: solid white 0.5vw;
+        color: white;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        border-radius: 10vw;
+        text-align: center;
+    }
+
+    footer{
+        width: 100%;
+        margin-top: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+    }
+    .social-circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #CFB590;
+        height: 12vw;
+        width: 12vw;
+        border-radius: 8vw;
+    }
+    .socials img{
+        position: relative;
+        top: 0.2vh;
+        height: 7vw;
+        width: 7vw;
+    }
+
+/* aparecer o menu // consertar */
+
+    .menu-drop:hover {
+        transform: scale(1.1);
+        transform:  rotate(90deg);
+        transition: 0.5s;
+    }
+    
+    .menu-drop-.menu-drop-container > .menud{
+            display: flex; 
+    }
+
+}
+
+
+
