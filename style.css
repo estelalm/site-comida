@@ -446,15 +446,16 @@ footer{
     .menu-drop-container{
         display: flex; 
         flex-direction: column;
+        height: 10vw;
     }
     .menu-drop{
         height: 10vw;
     }
     .menud{
-        display: none;
+        display: flex;
         position: absolute;
         top: 10vh;
-        left: -15vw;
+        left: 2vw;
         flex-direction: column;
         align-items: flex-start;
         margin-top: 10vw;
@@ -464,6 +465,12 @@ footer{
         height: 70vh;
         width: 60vw;
         gap: 4vh;
+    }
+    .menu-linkd{
+        color: #CFB590;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 2vw;
+        font-size: 7vw;
     }
     .menu{
         display: none;
@@ -608,11 +615,9 @@ footer{
         transition: 0.5s;
     }
     
-    .menu-drop-.menu-drop-container > .menud{
-            display: flex; 
+    .menu-drop-container:hover{
+        height: ;
     }
-
-}
-
+    }
 
 
