@@ -409,7 +409,9 @@ footer{
 /* responsivo, iphone SE */
 /* --------------------- */
 
+
 @media (max-width: 380px){
+
 
     header{
         display: flex;
@@ -417,14 +419,15 @@ footer{
         margin-top: 3vh;
         width: 100%;
     }
-    
+   
+
 
     .logo-container{
         display: flex;
         flex-direction: row;
         gap: 2vw;
         align-items: center;
-        margin-left: 16vw;
+        margin-left: 25vw;
     }
     .logo-circle{
         display: flex;
@@ -444,18 +447,19 @@ footer{
         font-size: 4vw;
     }
     .menu-drop-container{
-        display: flex; 
+        display: flex;
         flex-direction: column;
-        height: 10vw;
+        overflow: hidden;
+        position: absolute;
     }
     .menu-drop{
         height: 10vw;
+        width: 10vw;
     }
     .menud{
-        display: flex;
         position: absolute;
-        top: 10vh;
-        left: 2vw;
+        top: 5vh;
+        left: 1vw;
         flex-direction: column;
         align-items: flex-start;
         margin-top: 10vw;
@@ -464,14 +468,10 @@ footer{
         padding: 2vw;
         height: 70vh;
         width: 60vw;
-        gap: 4vh;
+        gap: 10vh;
     }
-    .menu-linkd{
-        color: #CFB590;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 2vw;
-        font-size: 7vw;
-    }
+
+
     .menu{
         display: none;
     }
@@ -480,20 +480,22 @@ footer{
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 6vw;
-        margin: 2vw;
+        margin: 10vw;
     }
-    .menu-link{
+    .menu-linkd{
         color: #CFB590;
         font-family: 'Roboto', sans-serif;
         margin-left: 2vw;
+        margin-top: 5vh;
         font-size: 7vw;
     }
     .line{
         background-color: white;
         height: 0.2vh;
         width: 85%;
+        margin: 3vh;
     }
-    
+   
     .compra{
         position: absolute;
         display: flex;
@@ -518,6 +520,7 @@ footer{
         bottom: 3vh;
     }
 
+
     main{
         display: flex;
         flex-direction: column;
@@ -527,7 +530,7 @@ footer{
         margin-top: 10vh;
         margin-bottom: 10vh;
     }
-    
+   
     .text{
         font-family: 'Merriweather', serif;
     }
@@ -545,6 +548,7 @@ footer{
         font-size: 5vw;
         text-align: center;
     }
+
 
     .button{
         font-size: 6vw;
@@ -578,6 +582,7 @@ footer{
         text-align: center;
     }
 
+
     footer{
         width: 100%;
         margin-top: 2vw;
@@ -607,17 +612,25 @@ footer{
         width: 7vw;
     }
 
+
+
 /* aparecer o menu // consertar */
+
 
     .menu-drop:hover {
         transform: scale(1.1);
         transform:  rotate(90deg);
         transition: 0.5s;
+        top: -20vh;
     }
-    
+   
     .menu-drop-container:hover{
-        height: ;
-    }
-    }
+    top: 5vh;
+    height: 81vh;
+    width: 62vw;
+   }
+
+}
+
 
 
